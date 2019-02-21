@@ -3,6 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
 # Instruction to run project
+
 Download the project
 Place code inside a folder (e.g channel) and go to this directory from cmd (e.g ..> channel)
 Run npm install
