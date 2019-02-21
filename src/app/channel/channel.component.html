@@ -1,0 +1,37 @@
+<div class="mainsec success">
+  <div class="container">
+     <div class="wrapDiv" *ngFor="let date of dates; let i = index">
+      <h2> {{date | date : "EEE,MMM dd,yyyy"}} </h2>
+
+          <div class="row" *ngFor="let channel of channels[date]; let j = index">
+
+            <div class="col-md-6 col-sm-12 leftsec margb">
+              <div class="profileimg">
+                  <img src="{{channel.subjectPhotoUrl}}" alt="Subject Image">            
+              </div>
+              <div class="abouttext">
+                  <h3> {{channel.title}} </h3>
+                  <p>  {{channel.description}} </p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 leftsec margb">
+              <div class="profileimg">
+                  <img src="{{channel.instructorPhotoUrl}}" alt="Instrutor Image">
+              </div>
+              <div class="abouttext">
+                  <h3>{{channel.instructorName}}</h3>  
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 margb">
+              <p *ngIf="j < channels[date].length-1"> {{channel.time | date : "h:mm a" }} - {{ channels[date][j+1].time | date : "h:mm a" }} EDT</p> 
+              <p *ngIf="j == channels[date].length-1"> {{channel.time | date : "h:mm a" }} - {{ oneHourAdded(channel.time) | date : "h:mm a" }} EDT</p> 
+            </div>
+          </div>
+
+
+    </div> 
+  </div>
+</div>
+

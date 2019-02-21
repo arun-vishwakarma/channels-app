@@ -1,0 +1,51 @@
+.mainsec{
+	background: #F7F7F9;
+}
+.leftsec {
+    position: relative;
+}
+.profileimg {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+}
+.profileimg img{
+	width: 100%;
+	height: 100%;
+	float: left;
+	border-radius: 50%;
+}
+.abouttext {
+	margin-left: 50px;
+}
+.abouttext h3{
+	margin-top: 0;
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+.abouttext p{
+	margin-bottom: 0;
+}
+.row {
+    background: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.wrapDiv h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+.wrapDiv{
+	padding: 10px 0;
+}
+.container {
+	padding: 0 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .leftsec.margb{
+    margin-bottom: 15px;
+  }
+}
