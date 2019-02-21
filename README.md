@@ -4,10 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Instruction to run project
 
-Download the project
-Place code inside a folder (e.g channel) and go to this directory from cmd (e.g ..> channel)
-Run npm install
-Open another cmd prompt and run node server (PORT used 3000 for node server)
+- Download the project
+- Place code inside a folder (e.g channel) and go to this directory from cmd (e.g ..> channel)
+- Run npm install
+ -Open another cmd prompt and run node server (PORT used 3000 for node server)
 
 ## Development server
 
